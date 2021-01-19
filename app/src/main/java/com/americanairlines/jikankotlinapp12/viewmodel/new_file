@@ -1,0 +1,10 @@
+
+
+
+1. Add a search button.
+2. Get all results and filter by search locally
+3. Do not perform search until a minimal of 3 characters is surpassed
+4. Timed delay
+5. Use observer timeout
+6. Wait until user hits space
+7.

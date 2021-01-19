@@ -19,7 +19,6 @@ class JikanViewModel: ViewModel() {
     private val jikanRetrofit: JikanRetrofit = JikanRetrofit()
 
     fun getSearchResults(searchQuery: String) {
-
         //rxJava implementation
         compositeDisposable.add(
             jikanRetrofit.getSearchQuery(searchQuery)
@@ -33,7 +32,7 @@ class JikanViewModel: ViewModel() {
                         jikanLiveData.postValue(it)
                     compositeDisposable.clear()
                 }, {
-                    Log.d("TAG_X_..", "${it.localizedMessage}")
+                    Log.d("TAG_X", "${it.localizedMessage}")
                 })
         )
     }
