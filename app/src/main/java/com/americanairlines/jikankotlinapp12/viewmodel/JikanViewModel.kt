@@ -36,6 +36,13 @@ class JikanViewModel: ViewModel() {
                 })
         )
     }
+
+    override fun onCleared() {
+        super.onCleared()
+        JikanViewModelFactory.viewModel = null
+        Log.d("TAG_X", "onClear called..")
+
+    }
 }
 
 
